@@ -5,21 +5,21 @@
 class Idiomatic < Formula
   desc "Deterministic enforcement for stochastic development"
   homepage "https://github.com/adamgilman/idiomatic"
-  version "0.0.2"
+  version "0.1.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/adamgilman/idiomatic/releases/download/v0.0.2/idiomatic_0.0.2_darwin_amd64.tar.gz"
-      sha256 "dda4cd925c1284fff4f7522eecd304d28b51aeb1d10476dd2c6cb09b8785bcc8"
+      url "https://github.com/adamgilman/idiomatic/releases/download/v0.1.0/idiomatic_0.1.0_darwin_amd64.tar.gz"
+      sha256 "2ae1bf581f023257f116c5f839051b4c50506573df38e01d521a50abdb674d17"
 
       define_method(:install) do
         bin.install "idio"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/adamgilman/idiomatic/releases/download/v0.0.2/idiomatic_0.0.2_darwin_arm64.tar.gz"
-      sha256 "1580cce5daf6b7c387a927b05d30b5679620f3a173e84809df6e71f5c2b4104f"
+      url "https://github.com/adamgilman/idiomatic/releases/download/v0.1.0/idiomatic_0.1.0_darwin_arm64.tar.gz"
+      sha256 "5b0bd998e0389d11db4b5602d354bfb593bc64be0044bd86bf8119934c5af2f8"
 
       define_method(:install) do
         bin.install "idio"
@@ -29,15 +29,15 @@ class Idiomatic < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adamgilman/idiomatic/releases/download/v0.0.2/idiomatic_0.0.2_linux_amd64.tar.gz"
-      sha256 "764b7ae35f1cc252d4b59d139aa7f7190c2ebedeeae2c74f45ffd3444dbb354e"
+      url "https://github.com/adamgilman/idiomatic/releases/download/v0.1.0/idiomatic_0.1.0_linux_amd64.tar.gz"
+      sha256 "8d3198e38f7810c0d24443b75bb963287040e97590e9d271cbbbbf0ab385c114"
       define_method(:install) do
         bin.install "idio"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adamgilman/idiomatic/releases/download/v0.0.2/idiomatic_0.0.2_linux_arm64.tar.gz"
-      sha256 "b5b216c60178f557df0815e7d6d11e30a84453cf9f32d0a013c6263d154ba278"
+      url "https://github.com/adamgilman/idiomatic/releases/download/v0.1.0/idiomatic_0.1.0_linux_arm64.tar.gz"
+      sha256 "483562481cce103cc7115bfe614ff2124dacbce694f1a1090a05c13dae2fdca6"
       define_method(:install) do
         bin.install "idio"
       end
